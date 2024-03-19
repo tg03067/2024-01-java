@@ -1,6 +1,6 @@
 package com.green.day2;
 
-public class MissionOddEvenResust2 {
+public class MisstionOddEvenResust2 {
     public static void main(String[] args){
         int num = (int)(Math.random() * 10) + 1;
 

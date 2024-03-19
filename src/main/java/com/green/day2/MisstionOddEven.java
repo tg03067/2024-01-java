@@ -1,6 +1,6 @@
 package com.green.day2;
 
-public class MissonOddEven {
+public class MisstionOddEven {
     public static void main(String[] args){
         for(int i=0; i<1; i++){
             int num = (int) (Math.random() * 10) + 1; //1~10

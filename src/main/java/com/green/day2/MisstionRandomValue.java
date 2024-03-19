@@ -1,6 +1,6 @@
 package com.green.day2;
 
-public class MissionRandomValue {
+public class MisstionRandomValue {
     public static void main(String[] args){
         //1~9 사이의 랜덤한 값 나올 수 있게 세팅
         for(int i=0; i<100; i++) {

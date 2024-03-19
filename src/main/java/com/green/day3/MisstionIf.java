@@ -2,7 +2,7 @@ package com.green.day3;
 
 import java.util.Scanner;
 
-public class MissionIf {
+public class MisstionIf {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         //scan 주소값 참조함 -> 객체로 접근가능

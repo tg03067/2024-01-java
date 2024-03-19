@@ -2,7 +2,7 @@ package com.green.day3;
 
 import java.util.Scanner;
 
-public class MissionIf2 {
+public class MisstionIf2 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.print("당신의 키를 입력해 주세요 >> ");

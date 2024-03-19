@@ -1,6 +1,6 @@
 package com.green.day3;
 
-public class MissionForLoopGugudan {
+public class MisstionForLoopGugudan {
     public static void main(String[] args){
         int dan = (int)(Math.random() * 8.0) + 2; //2~9 랜덤값
         System.out.println("dan: " + dan);
