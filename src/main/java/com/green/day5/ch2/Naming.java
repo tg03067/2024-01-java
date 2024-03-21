@@ -6,8 +6,6 @@ public class Naming {
     public static void main(String[] args){
         /* 네이밍 규칙 */
 
-
-
         //<변수, 메소드 명명규칙>
         //1. 대소문자가 구분, 길이 제한 X
         int abc, Abc, aBc, abC;
@@ -24,11 +22,17 @@ public class Naming {
         //4. 특수기호는 '_', '$'만 허용
         int _123, $123;
 
-        //5. 여러 단어로 구성된 이름은 카멜 케이스 기법을 사용한다.
+        //5. 여러 단어로 구성된 이름은 카멜 케이스 기법을 사용한다. ( 낙타 등 같다고 해서 붙여진 이름. )
         //   첫 단어만 빼고 단어들 첫 글자를 대문자로 표기.
+        //   이름에 _를 사용을 안함.
         //e.g. last, index, of >>> lastIndexOf
         //     happy, sunday, morning >>> happySundayMorning
 
+        //6. kebab case 기법(케밥 케이스 기법)
+        //   happy-sunday -morning
+
+        //7. 스네이크 케이스 기법
+        //   happy_sunday_morning
 
         //<클래스 명명규칙>
         //1. 클래스 이름의 첫 글자는 무조건 대문자로 시작!
@@ -46,5 +50,6 @@ public class Naming {
         final String NAME = "홍길동";
 
         PrintStream ps = System.out;
+        // out은 상수.
     }
 }

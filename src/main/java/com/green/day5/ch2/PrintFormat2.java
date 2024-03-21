@@ -9,17 +9,19 @@ public class PrintFormat2 {
         boolean isSingle = true; //true > 싱글입니다. false > 싱글이 아닙니다.
 
         //저의 이름은 홍길동입니다. 나이는 22살, 키는 178.2, 혈액형은 A형, 싱글입니다.
-        while(true) {
-            if(isSingle == true){
-                System.out.printf("저의 이름은 %s입니다. 나이는 %s살, 키는 %scm, 혈액형은 %s형이고 싱글입니다.\n"
-                        , name, age, height, bloodType);
-                break;
-            } else {
-                System.out.printf("저의 이름은 %s입니다. 나이는 %s살, 키는 %scm, 혈액형은 %s형이고 싱글이 아닙니다.\n"
-                        , name, age, height, bloodType);
-                break;
-            }
-        }
+//        while(true) {
+//            if(isSingle == true){
+//                System.out.printf("저의 이름은 %s입니다. 나이는 %s살, 키는 %scm, 혈액형은 %s형이고 싱글입니다.\n"
+//                        , name, age, height, bloodType);
+//                break;
+//            } else {
+//                System.out.printf("저의 이름은 %s입니다. 나이는 %s살, 키는 %scm, 혈액형은 %s형이고 싱글이 아닙니다.\n"
+//                        , name, age, height, bloodType);
+//                break;
+//            }
+//        }
+        System.out.printf("저의 이름은 %s입니다. 나이는 %s살, 키는 %scm, 혈액형은 %s형, %s\n"
+                , name, age, height, bloodType, isSingle ? "싱글입니다." : "싱글이 아닙니다.");
 
     }
 }

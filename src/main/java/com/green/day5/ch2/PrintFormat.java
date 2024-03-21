@@ -1,5 +1,11 @@
 package com.green.day5.ch2;
 
+//%d > 정수값 : byte, short, int, long
+//%s > 문자열 : String, "직접 작성한 값 "
+//%f > 실수값 : float, double
+//%c > 문자 : char값,
+//%b > 불린 : boolean
+
 public class PrintFormat {
     public static void main(String[] args){
         char c = 'A';
@@ -43,8 +49,8 @@ public class PrintFormat {
         //실수값을 넣고 싶을때는 %f
         System.out.printf("d=%f\n", d);
         System.out.printf("d=[%.2f]\n", d); //.() 안에 숫자자리만큼만 표기, 반올림 처리됨. 소수점 자르기.
-        System.out.printf("d=[%10.2f]\n", d);
-        System.out.printf("d=[%010.2f]\n", d);
+        System.out.printf("d=[%10.2f]\n", d); // 반올림 처리 됨.
+        System.out.printf("d=[%010.2f]\n", d); // 반올림 처리 됨.
 
         System.out.printf("[%s}\n", url);
         System.out.printf("[%20s}\n", url);
