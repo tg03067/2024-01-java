@@ -8,6 +8,8 @@ public class CastingEx {
         // 이때는 파싱처리 (Wrapper 클래스 제외)
         int n1 = 10;
         Integer n2 = n1;
+        //캡슐화 객체는 속성을 숨긴다.
+
 
         double d1 = 10.0;
         Double d2 = d1;
@@ -18,7 +20,7 @@ public class CastingEx {
         //byte > short > long > float > double > String(+연산자일 때만)
 
         long l1 = 100000000L;
-        float f1 = l1;
+        float f1 = l1; //byte는 long보다 작지만 손실을 보고 저장가능.
         System.out.println("f1: " + f1);
 
         long l2 = (long)f1;

@@ -1,6 +1,6 @@
 package com.green.day6.ch3;
 //p.97
-public class OperatotEx5 {
+public class OperatorEx5 {
     public static void main(String[] args){
         //+, -, *, /
 

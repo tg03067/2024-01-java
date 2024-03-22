@@ -10,6 +10,7 @@ public class ScannerEx {
         String input = scan.nextLine();//"123" > 123
         //int num = (int)input;
         int num = Integer.parseInt(input); //문자열을 정수로 바꿔줄 수 있음.
+        //검색하는 법 : java String to int
         // 문자가 들어가면 에러가 터짐.
         System.out.println("num: " + num);
         System.out.println("num + 1: " + (num + 1));

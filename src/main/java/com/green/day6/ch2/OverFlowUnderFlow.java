@@ -6,7 +6,25 @@ public class OverFlowUnderFlow {
         //overflow
         int i2 = -129;
         //underflow
-        if (Byte.MAX_VALUE >= i) {
+
+        int n3 = 100; //n3를 byte로 형변환을 할 것이다.
+        //형변환을 할 수 있는 값인지 체크하는 if문 작성해주세요.
+//        if(Byte.MAX_VALUE <= n3 || Byte.MIN_VALUE >= n3){
+                                //(or)
+//        if(Byte.MAX_VALUE <= n3 && Byte.MIN_VALUE >= n3){
+                                //(and)
+//            //127                   //-128
+//            byte b = (byte) n3;
+//            System.out.println("byte b: " + b);
+//        } else {
+//            System.out.println("byte n3: " + n3);
+//        }
+//        System.out.println("-------------");
+        if(n3 <= Byte.MAX_VALUE){
+
+        }
+
+        if (Byte.MAX_VALUE >= i) { //127 and -128
             byte b = (byte)i;
             System.out.println("b: " + b);
         }

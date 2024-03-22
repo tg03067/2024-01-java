@@ -1,6 +1,6 @@
 package com.green.day6.ch3;
 //p.113
-public class OprtatorEx23 {
+public class OperatorEx23 {
     public static void main(String[] args){
         String str1 = "abc";
         String str2 = new String("abc");
@@ -11,7 +11,9 @@ public class OprtatorEx23 {
         System.out.println("str1 == str2: " + (str1 == str2));
         System.out.println("str1.equlas(str2)" + (str1.equals(str2)));
 
-        //동등성 > 지위, 권리, 권한 //같은거인지( ex)물건이 같은지 물어보는것.). equals
-        //동일성 > 같은 인물, 같다. //객체[(주소값(ex)물건이 같은 위치에 있는지 물어보는것.))( == )]가 같은지 물어보는거임
+        //동등성 > 지위, 권리, 권한 //
+        // 다른 사람일지라도 가진것이 같은지. 같은거인지( ex)물건이 같은지 물어보는것.). equals
+        //동일성 > 같은 인물, 같다. //
+        // 객체[(주소값(ex)물건이 같은 위치에 있는지 물어보는것.))( == )]가 같은지 물어보는거임
     }
 }

@@ -7,12 +7,13 @@ public class AssignmentOperator {
         // right value(연산식, 변수, 리터럴)
         x = y = z = 3;
 
-        //연산 순서, lvalue, rvalue바뀜.
+        //연산 순서, lvalue, rvalue 식에 따라 바뀜.
 //        z = 3;
 //        y = z;
 //        x = y;
         System.out.println(x);
         System.out.println(y);
+        System.out.println(z);
 
         //복합 대입 연산자. (Compound Assignment Operators)
         // +, -, /, *, % 가능
@@ -31,7 +32,7 @@ public class AssignmentOperator {
 
         int k1 = 10, k2 = 3;
         int modResult = k1 % k2;
-        k1 %= k2;
+        k1 %= k2; //나머지 값 구하기 : 1
 
         System.out.println("3 - k1: " + k1);
     }

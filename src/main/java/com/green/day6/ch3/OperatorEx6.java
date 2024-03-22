@@ -9,7 +9,7 @@ public class OperatorEx6 {
                        // 쓸 일은 거의 없음.
         //System.out.println(c);
 
-        int d = 1_000_000;// _는 출력이 안됨. spacebar도 안됨.자릿수 확인하기 좋음.
+        int d = 1_000_000;// _는 출력이 안됨. spacebar쓸경우 에러가 발샐하면서 안됨.자릿수 확인하기 좋음.
         System.out.println(d);
 
         long e = 1_000_000 * 1_000_000; //int * int = int, overflow현상 발생.
