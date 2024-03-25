@@ -18,6 +18,7 @@ public class FlowEx2Result {
 
         // String.format은 input이 목적임.
         // printf 는 output이 목적임.
+        //format이랑 printf는 사용범은 같음.
 
 
         /*

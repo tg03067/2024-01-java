@@ -18,15 +18,14 @@ public class FlowEx10 {
         System.out.println("score: " + score);
         if(score > 100 || score <0){
             System.out.println("잘못입력된 숫자입니다.");
-        } else {
+        } else { //0~100
             String grade = "F";
             if(score >= 70) {
                 int score_10 = score / 10;
                 grade = switch(score_10){
                   case 10, 9 -> "A";
                   case 8 -> "B";
-                  case 7 -> "C";
-                    default -> "F";
+                  default -> "C";
                 };
             }
             System.out.printf("당신의 학점은 %s입니다.\n", grade);

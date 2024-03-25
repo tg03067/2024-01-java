@@ -12,6 +12,8 @@ public class FlowEx8 {
         주민번호를 확인하여 "여자"인지 "남자"인지 "유효하지않은 주민번호" 추력
         switch
          */
+
+        //String의 기능중에 char를 하나씩 뽑아낼 수 있음.
         Scanner scan = new Scanner(System.in);
         System.out.print("주민번호를 입력해주세요. >> ");
         String i = scan.nextLine();
@@ -19,7 +21,7 @@ public class FlowEx8 {
         String gender = switch (z){
           case '1', '3' -> "당신은 남자입니다.";
           case '2', '4' -> "당신은 여자입니다.";
-            default -> "유효하지않은 주민번호입니다.";
+          default -> "유효하지않은 주민번호입니다.";
         };
         System.out.println(gender);
         System.out.println("---종료---");

@@ -20,7 +20,7 @@ public class FlowEx6 {
         int month = scan.nextInt();
         if(month > 12 || month < 1){
             System.out.println("잘못입력하셨습니다.");
-        } else {
+        } else { //1~12
             String season = switch(month){
                 case 12, 1, 2 -> season = "겨울";
                 case 3, 4, 5 -> season = "봄";

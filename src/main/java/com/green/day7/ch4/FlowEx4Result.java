@@ -8,7 +8,7 @@ public class FlowEx4Result {
         System.out.print("점수를 입력해 주세요 >> ");
         int score = scan.nextInt();
         scan.close(); //stream이라는 글이 나오면 흐르고 있기때문에 닫아주는게 리소스사용을 줄일 수 있음.
-
+                      //사용했으면 반납해야된다고 생각을 하면됨.
         if(score < 0 || score > 100){
             System.out.println("잘못된 점수입니다.");
         } else {
