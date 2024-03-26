@@ -26,7 +26,7 @@ public class FlowEx25 {
         System.out.print("숫자를 입력하세요. (예:12345) >> ");
         int num = scan.nextInt();
         int sum = 0;
-        for(; sum > 10;){
+        for(; num > 0;){
             int odd = num % 10;
             sum += odd;
             odd /= 10;

@@ -6,7 +6,8 @@ public class FlowEx19Result {
         for(int i1 = 1 ; i1 <= LATS_NUM; i1++){
             for(int i2 = 1; i2 <= LATS_NUM; i2++){
                 for(int i3 = 1; i3 <= LATS_NUM; i3++){
-                    System.out.printf("%d%d%d\n", i1, i2, i3);
+                    //System.out.printf("%d%d%d\n", i1, i2, i3);
+                    System.out.println("" + i1 + i2 + i3);
                 }
             }
         }

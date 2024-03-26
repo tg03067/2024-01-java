@@ -11,8 +11,9 @@ public class FlowEx18Result {
 //            }
 //        }
         System.out.println("==========================");
-        for(int i = 2; i < 12; i++){
-            if( i > 2 ){
+        int startDan = 2;
+        for(int i = startDan; i < 10; i++){
+            if( i > startDan ){
                 System.out.println(i == 2 ? "" : "-----");
             }
             for(int z = 1; z < 9; z++){

@@ -20,7 +20,6 @@ public class FlowEx11Result {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
         char genVal = input.charAt(7);
-        String gender = "남";
         String direction = "전";
         switch(genVal){
             default:
@@ -31,15 +30,14 @@ public class FlowEx11Result {
                     case '3':
                         direction = "후";
                 }
-                System.out.printf("당신은 2000년 이%s에 출생한 %s자입니다.", direction, gender);
+                System.out.printf("당신은 2000년 이%s에 출생한 남자입니다.", direction);
                 break;
             case '2': case '4':
-                gender = "여";
                 switch (genVal){
                     case '4':
                         direction = "후";
                 }
-                System.out.printf("당신은 2000년 이%s에 출생한 %s자입니다.", direction, gender);
+                System.out.printf("당신은 2000년 이%s에 출생한 여자입니다.", direction);
                 break;
         }
     }

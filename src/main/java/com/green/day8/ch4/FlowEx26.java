@@ -2,7 +2,7 @@ package com.green.day8.ch4;
 
 public class FlowEx26 {
     public static void main(String[] args){
-        int num = 100;
+        final int num = 100;
         int i = 1;
         int z = 0;
         while(true){
