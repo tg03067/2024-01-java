@@ -6,7 +6,9 @@ public class ArrayStudy2 {
     public static void main(String[] args) {
 
         int[] numArr = new int[15];
+        //15는 매직넘버라서 int값에 초기화한후 그 변수를 []안에 넣어서 수정해도됨.
         System.out.println(numArr.length);
+        //length가 더 편함. 상수.
         System.out.println(Arrays.toString(numArr)); //배열안의 값을 알고싶을때사용, 가로로 길어지면 for문을 사용해도됨.
 //        for(int i = 0; i < 100; i++){
 //            System.out.printf("numArr[%d}: %d\n", i, numArr[i]);

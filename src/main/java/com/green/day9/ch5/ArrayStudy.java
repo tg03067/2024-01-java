@@ -44,6 +44,7 @@ public class ArrayStudy {
 
         //int[] numArr4 = new String[5]; = X
         //타입이 다르면 저장을 할 수 없음.
+        //타입의 주소값을 numArr4에 저장하겠다.
 
         /*
         배열을 사용하는 이유? 같은 타입의 여러값을 편하게 쓰기/읽기 하기 위해서
