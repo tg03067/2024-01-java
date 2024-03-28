@@ -32,6 +32,8 @@ public class MissionArray1Result {
         System.out.println();
         System.out.println("-------Q2-2--------");
 
+
+
         int lastIndex = numArr.length - 1;
         for(int i = 0; i < numArr.length; i++){
             System.out.printf("%d", numArr[i]);
@@ -39,6 +41,8 @@ public class MissionArray1Result {
                 System.out.print(", ");
             }
         }
+
+
 
         System.out.println();
         System.out.println("-------Q2-3--------");
@@ -48,12 +52,16 @@ public class MissionArray1Result {
             }
             System.out.printf("%d", numArr[i]);
         }
+        // , 먼저찍는 방법을 생각함.
+
+
         System.out.println();
         System.out.println("-------Q2-4--------");
         System.out.print(numArr[0]);
         for(int i = 1; i < numArr.length; i++){
             System.out.printf(", %d", numArr[i]);
         }
-
+        //가장 nice하긴한데 혹여나 error가 터질 수 도 있음.
+        // ex ) 배열이 0칸인 경우 ( 예외처리하면 되긴함. )
     }
 }

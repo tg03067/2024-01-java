@@ -1,4 +1,4 @@
-package com.green.day9.ch5;
+package com.green.day10.ch5;
 
 import java.util.Arrays;
 
@@ -17,5 +17,7 @@ public class MissionArray3Result {
         스와핑, 0번칸, 2번칸 스와핑해주세요
          */
 
+
+        //버블정렬 선택정렬
     }
 }
