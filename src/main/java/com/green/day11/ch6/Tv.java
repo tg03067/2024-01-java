@@ -12,6 +12,7 @@ public class Tv {
     void power(){ //호출만하면 실행함.
         power = !power; //toggle
     }
+    //()에서는 외부에서 값을 받을 수도 있음.
     void channulUp(){
         channel++;
         //channel += 1;

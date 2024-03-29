@@ -11,7 +11,7 @@ public class MultiArrayStudy1 {
         System.out.println("score.length: " + score.length);
         System.out.println("score[0].length: " + score[0].length);
         int[] temp = score[0];
-        //배열 != 배열의 배열
+        // 배열 != 배열의 배열
         // 두개는 서로 다른것임.
 
 

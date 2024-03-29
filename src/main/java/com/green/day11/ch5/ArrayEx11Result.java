@@ -11,7 +11,7 @@ public class ArrayEx11Result {
         for(int i = 0; i < numArr.length; i++){
             numArr[i] = (int)(Math.random() * numArr.length);
         }
-        for(int i = 0; i < len; i++){
+        for(int i = 0; i < numArr.length; i++){
             System.out.printf("numArr[%d]: %d\n", i, numArr[i]);
         }
         System.out.println(Arrays.toString(numArr));

@@ -7,6 +7,7 @@ public class TvTest {
         tv.channel = 10;
         tv.power = true;
         // . = 닷 연산자, 도트 연산자.
+        // 주소값.메소드호출   -    .이 있어야됨.
         // 객체에게 일을 시키거나 접근할 때쓰는거랑 같음.
 
         System.out.printf("tv color: %s, channel: %d, power: %b\n", tv.color, tv.channel, tv.power);

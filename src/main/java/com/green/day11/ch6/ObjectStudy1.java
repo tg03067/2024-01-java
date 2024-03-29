@@ -6,8 +6,8 @@ public class ObjectStudy1 {
         OOP (Object-Oriented Programing)
         객체지향언어
         UI (User Interface), UX (User Experience)
-        Spring
-        Framework, Library 자유의 차이가 있음.
+        EJB -> Spring
+        Framework, Library - 자유의 차이가 있음.
         룰이 있음,  내가 자유롭게 만들수 있음.
         룰안에서 쉽게 도와줌.
 
@@ -19,9 +19,9 @@ public class ObjectStudy1 {
         2. 객체지향 컨셉
         - class, prototype
 
-        3. class, 객체, instance 관계
+        3. class, ( 객체, instance ) 관계
         -class는 설계도에 가까움
-        -그 설계도를 만드는게 instance, 객체
+        -그 설계도로 만들어낸게 instance, 객체
         -이 과정은 객체화라고 함.
 
         4. 객체의 구성요소 (
@@ -37,6 +37,8 @@ public class ObjectStudy1 {
             클래스명 변수명 = new 클래스명();
             String str = "ddddd";
             String str2 = new String("ddddd");
+            //String만 위 방식으로 생성자 호출가능.
+
 
             Tv tv = new Tv();
                 tv객체의 주소값만 받겠다는 의미가 있음.
@@ -44,8 +46,6 @@ public class ObjectStudy1 {
                 new로 생성자를 호출해야됨.
                 컨스트럭터. constructor.
             reference 타입은 객체의 주소값만 담을 수 있음.
-
-
          */
     }
 }
