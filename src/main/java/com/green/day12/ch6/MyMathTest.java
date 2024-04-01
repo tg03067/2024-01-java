@@ -1,5 +1,5 @@
 package com.green.day12.ch6;
-
+//메인메소드는 시작점.
 public class MyMathTest {
     public static void main(String[] args){
         MyMath myMath = new MyMath();
@@ -46,6 +46,8 @@ class MyMath{
     int returnAdd(int n1, int n2) {
         return n1 + n2;
     }
+    //같은 메소드명을 쓸 수 있는 기법 : 오버로딩.
+
 
     //scope가 달라서 사용가능.
     void minus(int n1, int n2){

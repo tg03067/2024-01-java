@@ -9,8 +9,8 @@ public class Variable {
     //static은 객체화랑은 독립적이다.
     //없는 애들은 무조건 객체화가 필요하다.
 
-
-    void method(){
+            //매개변수도 지역변수.
+    void method(int num ){
         int lv = 0; //지역 변수(메소드 안에 있는 변수, Local Variable)
     }
 

@@ -12,4 +12,7 @@ public class Card {
 
     static int width = 100; //가로
     static int height = 250; //세로
+
+    //static은 class이름을 붙히고 static을 불러올 수 있다.
 }
+

@@ -13,7 +13,7 @@ public class CardTest {
         c1.number = 7;
 
         System.out.printf("c1.kind: %s, c1.number: %d\n", c1.kind, c1.number);
-        System.out.println(c1.width); //사용은 되나 지양할것.
+        System.out.println(c1.width); //사용은 되나 지양할것. ( Card.width 처럼 대문자.??? 처럼 대문자를 사용해서 써야됨.)
         System.out.println(c1.height); //사용은 되나 지양할것.
 
         Card c2 = new Card();

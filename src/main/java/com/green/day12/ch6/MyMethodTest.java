@@ -82,4 +82,12 @@ class MyMethod {
     int abs(int n){
         return n < 0 ? -n : n;
     }
+
+//    int abs(int n2){
+//        if(n2 > 0){
+//            return n2;
+//        } else {
+//            return -n2;
+//        }
+//    }
 }
