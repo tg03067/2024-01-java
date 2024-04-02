@@ -1,6 +1,7 @@
 package com.green.day13.ch6;
 //p.262
 public class CallStackTest {
+    //Strack : FILO = first in last out.
     public static void main(String[] args){
         firstMethod(); //메소드 호출,
         System.out.println("------------");

@@ -13,8 +13,9 @@ public class PrimitiveRefEx {
         System.out.println("nb.num: " + nb.num);//100
     }
 
-    public static void changeNum(Numbox n){
+    public static void changeNum(Numbox n){ //주소값을 복사해옴.
         //n = new Numbox(); //- 다른 존재이기에 이런식으로 실행하면 윗값은 100이 아니라 10이 나옴.
+        //객체화를 하면서 새로운 주소값을 가짐.
         n.num = 100;
     }
 

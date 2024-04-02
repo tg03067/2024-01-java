@@ -3,6 +3,8 @@ package com.green.day13.ch6;
 public class MyMathTest2 {
     public static void main(String[] args){
         long r = MyMath2.add(10,20);
+        //메소드이름 : add, 클래스이름 : MyNath2, 리턴타입: long, 파라미터 2개(int, int), 스태틱 메소드.
+        //class.메소드는 static 만 사용가능.
         System.out.println("r: " + r);
 
         MyMath2 myMath2 = new MyMath2();
