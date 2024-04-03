@@ -33,7 +33,7 @@ final class Suv  extends Car{ //final class는 상속 금지.
 //    }
 }
 /*
-class Tucson extends String{
+class Tucson extends Suv{
 
 }
  */
