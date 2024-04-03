@@ -23,7 +23,7 @@ public class StarTest {
         * ***
          */
         System.out.println("------------");
-        star.underbarTrianglePrint(4);
+        star.underbarTrianglePrint(6);
     }
 }
 

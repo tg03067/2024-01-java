@@ -3,7 +3,7 @@ package com.green.day14.ch6;
 import java.util.Arrays;
 
 public class MyArrays {
-    static void printArr(int[] i){
+    public static void printArr(int[] i){
         System.out.print("[");
         for(int z = 0; z < i.length; z++){
             if(z > 0){
@@ -15,7 +15,7 @@ public class MyArrays {
         System.out.println();
     }
 
-    static String toString(int[] i){
+    public static String toString(int[] i){
         String str = "[";
         for(int z = 0; z < i.length; z++){
             if(z > 0){

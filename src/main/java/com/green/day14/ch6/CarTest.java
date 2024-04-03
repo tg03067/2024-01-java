@@ -18,17 +18,18 @@ public class CarTest {
         Car c4 = new Car(c2);
         System.out.printf("c4.color: %5s, c4.gearType: %6s, c4.door: %d\n"
                 , c4.color, c4.gearType, c4.door); //red, manual, 5
+
+        System.out.println(c2 == c4);
     }
 }
 
-
 class Car{
-    String color;
+    String color; //속성.
     String gearType;
     int door;
 
     //생성자는 생성 후에는 호출 불가.
-    Car(){
+    Car(){ //
 //        this.color = "red";
 //        this.gearType = "manual";
 //        this.door = 5;
@@ -52,7 +53,7 @@ class Car{
         init();
     }
 
-    void init(){
+    void init(){ //메소드.
 
     }
 
