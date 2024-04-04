@@ -37,6 +37,7 @@ class Child extends Parent{
     }
 
     @Override //애노테이션 Annotation(오버라이딩이 됐는지 확인을 해준다.)
+              //오버라이딩은 상위 클래스의 메소드를 재정의하는 것.
     public void attack(){
         System.out.println("자식이 적을 공격한다.");
         //this.attack(); 오버라이딩에서 this사용은 무한루프에 빠짐.

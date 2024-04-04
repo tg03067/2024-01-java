@@ -6,30 +6,27 @@ public class AbstractTest {
     }
 }
 
-abstract class Dog { //추상 클래스 - 객체화를 사용하지않고 상속으로만 사용하고 싶을때 사용.
-
+abstract class Dog { //추상 클래스 - 객체화를 사용하지않고 상속으로만 사용하고 싶을때 사용. 불완전한 클래스.
+                     // 하위클래스에 의해서만 구현이됨.
 }
 
 abstract class Cat {
     int age;
-    //추상 메소드는 반드시 추상 클래스내에 있어야됨.
+    //추상 메소드는 반드시 추상 클래스내에 있어야됨. - 강제성이 있는 메소드.
     abstract void crying();
-
     void jump(){
         System.out.println("폴짝 폴짝");
     }
 }
 
 class KoreaShort extends Cat{
-
-    @Override
+    @Override //재정의.
     void crying(){ // 추상메소드를 포함한 클래스를 상속받으면 추상메소드를 반드시 추상클래스를 오버라이딩해야됨.
         System.out.println("야옹~ 야옹~");
     }
 }
 
 class AmericaCat extends Cat{
-
     @Override
     void crying() {
         System.out.println("미유~~ 미유~~");

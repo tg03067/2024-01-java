@@ -21,7 +21,7 @@ class Car {
     Car(int cc){
         this.CC = cc;
     }
-
+                        //멤버필드 앞 final은 상수로 설정할 수 있음.
     final void start(){ //메소드앞 final은 오버라이딩 금지.
         System.out.println("자동차 시동을 건다.");
     }

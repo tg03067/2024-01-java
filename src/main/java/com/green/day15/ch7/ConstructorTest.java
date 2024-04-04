@@ -33,6 +33,7 @@ class Tiger extends Animal{
     Tiger(int age, String name){
         super(age); //상위클래스의 생성자 호출.(기본생성자를 호출하거나, 생성자를 호출해줘야됨.) - 객체화의 조건.
                     //있는 생성자를 호출해서 사용할 것.
+                    //메소드에서는 생성자 호출을 할 수가 없음.
         this.name = name;
     }
 }
