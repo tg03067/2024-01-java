@@ -81,7 +81,7 @@ class Tv extends Product {
         return "TV " + super.toString();
     }
 }
-class Product {
+abstract class Product {
     private final int price;
     private final int bonusPoint;
 

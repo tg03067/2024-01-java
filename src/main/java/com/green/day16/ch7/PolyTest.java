@@ -14,7 +14,7 @@ public class PolyTest {
         Dog dog_1 = new BullDog();
 
         //2. 자식 타입의 변수는 부모 객체 주소값 담을 수 없다.
-        //Dog dog_2 = new Animal(); // 컴파일 에러
+        //Dog dog_2 = new Animal(); // 컴파일 에러 (문법에러)
         //Dog dog_3 = (Dog)new Animal(); //형변환 에러가 발생.
         //dog_3.sleep();
 
