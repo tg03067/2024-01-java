@@ -1,6 +1,6 @@
 package com.green.day17.ch7;
 
-public class EqualsStudy {
+public class  EqualsStudy {
     public static void main(String[] args){
         Numbox n1 = new Numbox(10);
         Numbox n2 = new Numbox(10);
