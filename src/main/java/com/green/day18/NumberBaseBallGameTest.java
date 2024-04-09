@@ -1,12 +1,14 @@
 package com.green.day18;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
 
 public class NumberBaseBallGameTest {
     public static void main(String[] args){
         NumberBaseBallGame game = new NumberBaseBallGame(3);
         game.showArr();
-        //game.start();
+        game.start();
     }
 }
 
@@ -25,7 +27,6 @@ class NumberBaseBallGame {
         }
         this.init();
     }
-
     private void init(){
         this.numArr = new int[NUMBER_COUNT];
         Main:
@@ -45,5 +46,56 @@ class NumberBaseBallGame {
     }
     public void showArr(){
         System.out.println(Arrays.toString(this.numArr));
+    }
+    public void start(){
+        Scanner scan = new Scanner(System.in);
+        Main:
+        while(true){
+            System.out.printf("숫자를 %d개 입력해 주세요. (구분은 스페이스) >>> ", NUMBER_COUNT);
+            String strAnswer = scan.nextLine(); // 3 7 9
+            String[] answerStrArr = strAnswer.split(" ");
+            int[] answerArr = new int[answerStrArr.length];
+
+            HashSet<Integer> numSet = new HashSet();
+            try {
+                for (int i = 0; i < answerStrArr.length; i++) {
+                    answerArr[i] = Integer.parseInt(answerStrArr[i]);
+                    if(!numSet.add(answerArr[i])){
+                        System.out.println("중복된 숫자가 있습니다. 다시 입력해 주세요.");
+                        continue Main;
+                    }
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("숫자만 입력해 주세요.");
+                continue;
+            }
+
+
+            if(numArr.length != answerArr.length){
+                System.out.println("잘못 입력하셨습니다.");
+                continue;
+            }
+
+            int striker = 0, ball = 0;
+            for(int i = 0; i < answerArr.length; i++){
+                for(int z = 0; z < answerArr.length; z++) {
+                    if (answerArr[i] == numArr[z]) {
+                        if (i == z){
+                            striker++;
+                        } else {
+                            ball++;
+                        }
+                    }
+                }
+            }
+
+            //striker, ball 갯수 찾아내면된다.
+            if(striker == NUMBER_COUNT){
+                System.out.println("정답!!");
+                break;
+            }
+            System.out.printf("S: %d, B: %d, O: %d\n\n", striker, ball, NUMBER_COUNT - striker - ball);
+        }
+        scan.close();
     }
 }
