@@ -41,6 +41,42 @@ public class MemberDao {
         }
         return result;
     }
+    //SINGLETON
+    public MemberEntity selMember(String memId) {
+        String sql = String.format("SELECT mem_id, mem_name, mem_number, addr, phone1, phone2, height, debut_date" +
+                " FROM member WHERE mem_id = '%s'", memId);
+        System.out.println(sql);
+        try(Connection conn = myConn.getConn();
+            Statement stat = conn.createStatement();
+            ResultSet rs = stat.executeQuery(sql)){
+            if(rs.next()){
+                MemberEntity entity = new MemberEntity();
+                String memId2 = rs.getString("mem_id");
+                String memName = rs.getString("mem_name");
+                Integer memNumber = rs.getInt("mem_number");
+                String addr = rs.getString("addr");
+                String phone1 = rs.getString("phone1");
+                String phone2 = rs.getString("phone2");
+                Integer height = rs.getInt("height");
+                String debut_date = rs.getString("debut_date");
+
+                entity.setMemId(memId2);
+                entity.setMemName(memName);
+                entity.setMemNumber(memNumber);
+                entity.setAddr(addr);
+                entity.setPhone1(phone1);
+                entity.setPhone2(phone2);
+                entity.setHeight(height);
+                entity.setDebutDate(debut_date);
+                return entity;
+            }
+            return null;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
     //SELECT
     public List<MemberEntity> selMemberList(){ // 부분으로 가져오지않겠다는 의미 = 파라미터가 없음.
         List<MemberEntity> list = new ArrayList<>();
@@ -55,11 +91,10 @@ public class MemberDao {
         try(Connection conn = myConn.getConn();
             Statement stat = conn.createStatement();
             ResultSet rs = stat.executeQuery(sql)) {
-
             while(rs.next()){
-                String memId = rs.getNString("mem_id");
-                String memName = rs.getNString("mem_name");
-                String debutDate = rs.getNString("debut_date");
+                String memId = rs.getString("mem_id");
+                String memName = rs.getString("mem_name");
+                String debutDate = rs.getString("debut_date");
 
                 MemberEntity member = new MemberEntity();
                 list.add(member);
@@ -67,7 +102,6 @@ public class MemberDao {
                 member.setMemName(memName);
                 member.setDebutDate(debutDate);
             }
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
@@ -107,7 +141,7 @@ public class MemberDao {
         return result;
     }
     //DELETE
-    public int delMember(MemberEntity entity){
+    public int delMember(MemberEntity entity)   {
         String pk = "mem_id";
 
         String sql = String.format("DELETE FROM member WHERE %s = '%s'\n", pk, entity.getMemId());
@@ -178,7 +212,6 @@ class DelMemberTest{
         System.out.println("affectedRow: " + affectedRow);
     }
 }
-
 class MemberDaoTest {
     public static void main(String[] args){
         MemberDao memberDao = new MemberDao(); // 객체화 했다.
@@ -200,5 +233,12 @@ class MemberDaoTest {
         // 4. MemberDao객체 주소값 도트연산자를 이용하여 메소드 선언부에 맞춰서 호출을 한다.
         int affectedRow = memberDao.insMember(member);
         System.out.printf("affectedRew: %d\n", affectedRow);
+    }
+}
+class SelMemberTest{
+    public static void main(String[] args){
+        MemberDao dao = new MemberDao();
+        MemberEntity member = dao.selMember("WMN");
+        System.out.println(member);
     }
 }
