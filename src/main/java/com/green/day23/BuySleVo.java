@@ -1,5 +1,5 @@
 package com.green.day23;
-//Vo ( Value Object )
+//Vo ( Value Object ) - 대표하는 이름, 변하지않는것.
 public class BuySleVo {
     private String memId;
     private int buyCount;
