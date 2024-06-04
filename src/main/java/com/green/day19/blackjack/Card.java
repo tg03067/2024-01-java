@@ -23,17 +23,3 @@ public class Card {
         };
     }
 }
-
-class CardTest {
-    public static void main(String[] args){
-        // 2~10 점수 그대로, A > 1, J,Q,K = 10
-        Card c = new Card("Spade", "A");
-        //기본 생성자는 없어야 함.
-        String pattern = c.getPattern();
-        String denomination = c.getDenomination();
-        System.out.println(c); //Spade(A)
-
-        int score = c.getPoint(); //1
-        System.out.println(score);
-    }
-}
